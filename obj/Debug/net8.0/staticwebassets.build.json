@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "Ncet4mm5zPCs/PG0ObldSZ+pNK8VYFH73HTSvoR1B5U=",
+  "Source": "omega_project",
+  "BasePath": "_content/omega_project",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "omega_project\\wwwroot",
+      "Source": "omega_project",
+      "ContentRoot": "C:\\Users\\TRoli\\Desktop\\omega_project\\wwwroot\\",
+      "BasePath": "_content/omega_project",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\TRoli\\Desktop\\omega_project\\wwwroot\\index.html",
+      "SourceId": "omega_project",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\TRoli\\Desktop\\omega_project\\wwwroot\\",
+      "BasePath": "_content/omega_project",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}
