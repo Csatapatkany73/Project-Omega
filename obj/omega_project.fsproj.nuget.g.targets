@@ -2,5 +2,6 @@
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)websharper.fsharp\9.0.1.549\build\WebSharper.FSharp.targets" Condition="Exists('$(NuGetPackageRoot)websharper.fsharp\9.0.1.549\build\WebSharper.FSharp.targets')" />
+    <Import Project="$(NuGetPackageRoot)questpdf\2025.4.4\buildTransitive\QuestPDF.targets" Condition="Exists('$(NuGetPackageRoot)questpdf\2025.4.4\buildTransitive\QuestPDF.targets')" />
   </ImportGroup>
 </Project>

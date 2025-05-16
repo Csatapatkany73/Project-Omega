@@ -19,5 +19,6 @@
     <PkgWebSharper_UI Condition=" '$(PkgWebSharper_UI)' == '' ">C:\Users\TRoli\.nuget\packages\websharper.ui\9.0.0.547</PkgWebSharper_UI>
     <PkgWebSharper_FSharp Condition=" '$(PkgWebSharper_FSharp)' == '' ">C:\Users\TRoli\.nuget\packages\websharper.fsharp\9.0.1.549</PkgWebSharper_FSharp>
     <PkgWebSharper_AspNetCore Condition=" '$(PkgWebSharper_AspNetCore)' == '' ">C:\Users\TRoli\.nuget\packages\websharper.aspnetcore\9.0.1.549</PkgWebSharper_AspNetCore>
+    <PkgQuestPDF Condition=" '$(PkgQuestPDF)' == '' ">C:\Users\TRoli\.nuget\packages\questpdf\2025.4.4</PkgQuestPDF>
   </PropertyGroup>
 </Project>

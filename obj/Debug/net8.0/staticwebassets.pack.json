@@ -1,6 +1,38 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\TRoli\\Desktop\\omega_project\\wwwroot\\Scripts\\WebSharper.Core.JavaScript\\Runtime.js",
+      "PackagePath": "staticwebassets\\Scripts\\WebSharper.Core.JavaScript\\Runtime.js"
+    },
+    {
+      "Id": "C:\\Users\\TRoli\\Desktop\\omega_project\\wwwroot\\Scripts\\omega_project.css",
+      "PackagePath": "staticwebassets\\Scripts\\omega_project.css"
+    },
+    {
+      "Id": "C:\\Users\\TRoli\\Desktop\\omega_project\\wwwroot\\Scripts\\omega_project.head.html",
+      "PackagePath": "staticwebassets\\Scripts\\omega_project.head.html"
+    },
+    {
+      "Id": "C:\\Users\\TRoli\\Desktop\\omega_project\\wwwroot\\Scripts\\omega_project.head.js",
+      "PackagePath": "staticwebassets\\Scripts\\omega_project.head.js"
+    },
+    {
+      "Id": "C:\\Users\\TRoli\\Desktop\\omega_project\\wwwroot\\Scripts\\omega_project.js",
+      "PackagePath": "staticwebassets\\Scripts\\omega_project.js"
+    },
+    {
+      "Id": "C:\\Users\\TRoli\\Desktop\\omega_project\\wwwroot\\Scripts\\omega_project.min.js",
+      "PackagePath": "staticwebassets\\Scripts\\omega_project.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TRoli\\Desktop\\omega_project\\wwwroot\\Scripts\\script.js",
+      "PackagePath": "staticwebassets\\Scripts\\script.js"
+    },
+    {
+      "Id": "C:\\Users\\TRoli\\Desktop\\omega_project\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "C:\\Users\\TRoli\\Desktop\\omega_project\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

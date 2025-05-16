@@ -51,6 +51,11 @@
               "version": "[8.0.403, )",
               "generatePathProperty": true
             },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2025.4.4, )",
+              "generatePathProperty": true
+            },
             "WebSharper": {
               "target": "Package",
               "version": "[9.0.1.549, )",

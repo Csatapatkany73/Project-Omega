@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("omega_project")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7558702a386a51121c6735b9f9d4f1facd0aa85")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("omega_project")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("omega_project")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
