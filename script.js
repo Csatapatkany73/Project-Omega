@@ -14,13 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const sortByDateDescButton = document.getElementById('sortByDateDescButton')
   const smartSortButton = document.getElementById('smartSortButton')
 
-  // Csak memóriában tároljuk az adatokat
+
   let savedStudies = []
-
-  // NEM töltjük be a localStorage-ból a korábbi bejegyzéseket
-  // NEM jelenítünk meg semmit induláskor
-
-  // Űrlap küldés kezelése
+ // Űrlap küldés kezelése
   form.addEventListener('submit', (e) => {
     e.preventDefault()
 
@@ -38,13 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
       priority,
       deadline,
     }
-
     savedStudies.push(studyEntry)
-
-    // Frissítjük a listát
     addStudyToList(studyEntry, savedStudies.length - 1)
-
-    // Űrlap mezők ürítése
     subjectInput.value = ''
     minutesInput.value = ''
     plannedTimeInput.value = ''
@@ -52,35 +43,28 @@ document.addEventListener('DOMContentLoaded', () => {
     deadlineInput.value = ''
   })
 
-  // Minden törlése gomb kezelése
   clearAllButton.addEventListener('click', () => {
-    // Töröljük a memóriában tárolt adatokat és a listát
     savedStudies = []
     studyList.innerHTML = ''
   })
 
-  // HTML exportálás gomb kezelése
   exportPdfButton.addEventListener('click', () => {
-    // Adatok összegyűjtése
     const exportData = Array.from(studyList.children).map((li, index) => {
       const isCompleted = li.querySelector('input[type="checkbox"]').checked
       const textSpan = li.querySelector('span')
 
-      // Eredeti szövegből kivesszük az adatokat
+     
       const text = textSpan.textContent
       const parts = text.split('–')[0].trim()
       const subject = parts
 
-      // Percek kinyerése
       const minutesMatch = text.match(/(\d+) perc \/ (\d+) perc/)
       const minutes = minutesMatch ? parseInt(minutesMatch[1]) : 0
       const plannedTime = minutesMatch ? parseInt(minutesMatch[2]) : 0
 
-      // Prioritás kinyerése
       const priorityMatch = text.match(/Prioritás: ([^\-]+)/)
       const priority = priorityMatch ? priorityMatch[1].trim() : ''
 
-      // Határidő kinyerése
       const deadlineMatch = text.match(/Határidő: ([^\-]+)/)
       const deadline = deadlineMatch ? deadlineMatch[1].trim() : ''
 
@@ -94,10 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
 
-    // HTML jelentés létrehozása
     const html = generateHTMLReport(exportData)
 
-    // Letöltés
     const blob = new Blob([html], { type: 'text/html' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
@@ -109,7 +91,6 @@ document.addEventListener('DOMContentLoaded', () => {
     URL.revokeObjectURL(url)
   })
 
-  // HTML jelentés generálása
   function generateHTMLReport(entries) {
     let html = `
       <!DOCTYPE html>
@@ -156,7 +137,6 @@ document.addEventListener('DOMContentLoaded', () => {
       totalMinutes += entry.minutes
       totalPlanned += entry.plannedTime
 
-      // Formázott dátum
       const formattedDeadline = formatDate(entry.deadline)
 
       html += `
@@ -174,7 +154,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     html += `</table>`
 
-    // Összesítés
     const totalPercentage =
       totalPlanned > 0
         ? ((totalMinutes / totalPlanned) * 100).toFixed(1)
@@ -187,7 +166,6 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="chart-container">
     `
 
-    // Grafikon
     const maxMinutes = Math.max(
       ...entries.map((e) => Math.max(e.minutes, e.plannedTime)),
       1
