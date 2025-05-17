@@ -20,7 +20,5 @@ let main args =
     app.UseDefaultFiles() |> ignore
     app.UseStaticFiles() |> ignore
 
-    // Eltávolítottuk a szerver oldali API regisztrációt, mivel a kliensben történik az exportálás
-
     app.Run()
     0
