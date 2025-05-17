@@ -5,6 +5,7 @@ Study Time Tracker is an application designed to help you keep track of how much
 Try-live link: https://csatapatkany73.github.io/Project-Omega/
 
 ![image](https://github.com/user-attachments/assets/57502750-4c14-4e0b-b6a4-e319afc7ceaf)
+#EXPORTED HTML
 ![image](https://github.com/user-attachments/assets/260d57ef-cb58-43be-8269-15777152c4c7)
 
 
